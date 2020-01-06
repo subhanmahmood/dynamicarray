@@ -14,21 +14,23 @@ int main() {
 	for(int i = 0; i < 5; i++){
 		intArray.add(rand() % 100);
 	}
-	cout << "First 5 in int array: " << endl;
-	intArray.print();
+
 	intArray.add(1);
 	intArray.add(2);
 	intArray.add(3);
 	intArray.add(4);
 	intArray.add(5);
-	cout << "Second 5 in int array: " << endl;
+	cout << "Int Array Contents: " << endl;
 	intArray.print();
+
+
 	Array<double> doubleArray;
 
 	for(int i = 0; i < 5; i++){
 		doubleArray.add((double) rand() / (double) RAND_MAX);
 	}
-	cout << "Double Array: ";
+	cout << "Double Array: " << endl;
+
 	doubleArray.print();
 
 	doubleArray.add(0.1);
